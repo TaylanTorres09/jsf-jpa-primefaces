@@ -12,7 +12,17 @@
 	<properties>
 		<project.build.souceEncoding>UTF-8</project.build.souceEncoding>
 	</properties>
-
+	
+	<dependencies>
+		<dependency>
+			<groupId>org.glassfish</groupId>
+			<artifactId>javax.faces</artifactId>
+			<version>2.4.0</version>
+			<scope>compile</scope>
+		</dependency>
+		
+	</dependencies>
+	
 	<build>
 		<finalName>${project.artifactId}</finalName>
 		<plugins>
