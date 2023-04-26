@@ -6,22 +6,29 @@
 	xmlns:p="http://primefaces.org/ui">
 	<h:head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		
+		<h:outputStylesheet library="css" name="file.css" />
+		
 		<title>Cadastro</title>
 	</h:head>
 	<h:body>
 		
-		<h1>Cadastro de funcionário</h1>
+		<p:graphicImage library="logo" name="download.png" width="200"/>
+		
 		<h:form id="form">
-			<h:panelGrid columns="2">
-				<p:outputLabel value="Nome"/>
-				<p:inputText value="#{bean.pessoa.nome}"/>
-				<p:outputLabel value="E-mail"/>
-				<p:inputText value="#{bean.pessoa.email}"/>
-				<p:outputLabel/>
-				<p:commandButton value="Adicionar" action="#{bean.adicionar}" update="form tabelaPessoa"/>
-				
-			</h:panelGrid>
+			<h1>Cadastro de funcionário</h1>
 			
+			<p:panel header="Cadastro de Clientes">
+				<h:panelGrid columns="2">
+					<p:outputLabel value="Nome"/>
+					<p:inputText value="#{bean.pessoa.nome}"/>
+					<p:outputLabel value="E-mail"/>
+					<p:inputText value="#{bean.pessoa.email}"/>
+					<p:outputLabel/>
+					<p:commandButton value="Adicionar" action="#{bean.adicionar}" update="form tabelaPessoa"/>
+					
+				</h:panelGrid>
+			</p:panel>
 		</h:form>
 		
 		<h1>Lista de Pessoas</h1>
