@@ -4,11 +4,41 @@
 	xmlns:h="http://xmlns.jcp.org/jsf/html"
 	xmlns:f="http://xmlns.jcp.org/jsf/core"
 	xmlns:p="http://primefaces.org/ui">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<title>Insert title here</title>
-	</head>
-	<body>
-	
-	</body>
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<h:outputStylesheet library="css" name="file.css" />
+
+	<title>Treinamento JSF e PrimeFaces</title>
+
+</h:head>
+
+<h:body>
+
+	<header>
+	<div style="float: left; margin-left: 10px">
+		<h:graphicImage library="logo" name="download.png" />
+	</div>
+	<div style="float: right;">
+		<h:graphicImage library="logo" name="download.png" />
+	</div>
+	</header>
+
+	<h1>Campos de Entrada de Texto</h1>
+
+	<p:messages autoUpdate="true" id="msg" />
+
+	<h:form id="form">
+
+		<p:panelGrid columns="2">
+			<p:outputLabel value="Nome" for="nome" />
+
+			<p:inputText id="nome" required="true"
+				requiredMessage="O nome é obrigatório!" maxlength="10" size="30"
+				placeholder="Insira o nome aqui" />
+		</p:panelGrid>
+
+	</h:form>
+
+</h:body>
 </html>
