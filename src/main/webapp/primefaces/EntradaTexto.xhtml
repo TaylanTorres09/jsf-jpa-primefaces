@@ -36,6 +36,14 @@
 			<p:inputText id="nome" required="true"
 				requiredMessage="O nome é obrigatório!" maxlength="10" size="30"
 				placeholder="Insira o nome aqui" />
+
+			<p:outputLabel value="Senha" for="senha" />
+
+			<p:password id="senha" feedback="true" weakLabel="Muito fraca"
+				goodLabel="Senha razoável" strongLabel="senha forte" inline="true"
+				promptLabel="Informa uma senha" match="confirma" required="true"
+				requiredMessage="A senha é obrigatória" />
+			
 		</p:panelGrid>
 
 	</h:form>
