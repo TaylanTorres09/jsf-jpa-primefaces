@@ -42,9 +42,15 @@
 			<p:password id="senha" feedback="true" weakLabel="Muito fraca"
 				goodLabel="Senha razoável" strongLabel="senha forte" inline="true"
 				promptLabel="Informa uma senha" match="confirma" required="true"
-				requiredMessage="A senha é obrigatória" />
-			
+				requiredMessage="A senha é obrigatória"
+				validatorMessage="A senha e a confirmação estão diferentes" />
+
+			<p:outputLabel value="Confirme sua senha" for="confirma" />
+			<p:password id="confirma" required="true" />
 		</p:panelGrid>
+
+		<br />
+		<p:commandButton value="Cadastrar" icon="ui-icon-disk" />
 
 	</h:form>
 
